@@ -1,0 +1,24 @@
+<h1><%= @user.name %>'s Books for Sale</h1>
+
+<form id='quote'>
+    <label>
+      Get a price quote:
+      <input type='text' name='isbn' placeholder='Enter an ISBN number...'/>
+    </label>
+    <button>Search</button>
+</form>
+
+
+
+<div id='books-container'></div>
+
+<script type='template' id='book-html'>
+  <a href="#<%%= book.get('id') %>"><%%= book.get('title') %></a> | <%%= book.get('isbn') %> | <span> &times; </span>
+</script>
+
+<script type='template' id='book-results'>
+  <h2><%%= title %></h2>
+  <p><%%= book.chegg %></p>
+</script>
+
+

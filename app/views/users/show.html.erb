@@ -1,0 +1,32 @@
+<h1>TSUNDOKU</h1>
+
+<!-- <h2><%= @user.name %>'s Books for Sale</h2> -->
+<input type="hidden" name="user_id" value="<%= current_user.id %>">
+
+<form id='quote'>
+    <label>
+      Get a price quote:
+      <input type='text' name='isbn' placeholder='Enter an ISBN number...'/>
+    </label>
+    <button>Search</button>
+</form>
+
+
+
+<div id='books-container'></div>
+
+<script type='template' id='book-html'>
+  <a href="#<%%= book.get('id') %>"><%%= book.get('title') %></a> | <%%= book.get('isbn') %> | <span> &times; </span>
+</script>
+
+<script type='template' id='book-detail'>
+  <h2><%%= title %></h2>
+  <ol>
+    <li><a href="<%%= prices[0].url %>"><%%= prices[0].site %></a>: $<%%= prices[0].price %></li>
+    <li><a href="<%%= prices[1].url %>"><%%= prices[1].site %></a>: $<%%= prices[1].price %></li>
+    <li><a href="<%%= prices[2].url %>"><%%= prices[2].site %></a>: $<%%= prices[2].price %></li>
+    <li><a href="<%%= prices[3].url %>"><%%= prices[3].site %></a>: $<%%= prices[3].price %></li>
+  </ol>
+</script>
+
+

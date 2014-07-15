@@ -1,0 +1,74 @@
+body {
+  background: url('http://www.thegamerslibrary.com/Images/library-background4.jpg');
+  background-size: cover;
+}
+
+.title {
+  background-color: rgba(245, 241, 222, 0.30);
+  border-radius: 50%;
+  color: white;
+  display: table-cell;
+  font-family: 'Josefin Sans', sans-serif;
+  height: 30em;
+  margin: 0 auto;
+  text-align: center;
+  vertical-align: middle;
+  width: 30em;
+}
+
+.title h1 {
+  font-weight: bold;
+}
+
+.nav {
+  float: left;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav a:hover {
+  background-color: rgba(245, 241, 222, 0.50);
+}
+
+.new-user {
+  background-color: rgba(245, 241, 222, 0.30);
+  color: white;
+  font-family: 'Josefin Sans', sans-serif;
+  margin: 0 auto;
+  text-align: center;
+  width: 500px;
+}
+
+.new-user li {
+  display: block;
+}
+
+.new-user li label {
+  float: left;
+  text-align: right;
+  width: 200px;
+}
+
+.sign-in {
+  background-color: rgba(245, 241, 222, 0.30);
+  color: white;
+  font-family: 'Josefin Sans', sans-serif;
+  margin: 0 auto;
+  text-align: center;
+  width: 500px;
+}
+
+.sign-in li {
+  display: block;
+}
+
+.sign-in li label {
+  float: left;
+  text-align: right;
+  width: 200px;
+}
+
