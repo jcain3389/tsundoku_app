@@ -40,4 +40,7 @@ gem 'bcrypt', '~> 3.1.7'
 gem 'nokogiri'
 
 gem 'pry-rails', group: :development
-gem 'rails_12factor'
+
+ruby "2.1.1"
+
+gem 'rails_12factor', group: :production
