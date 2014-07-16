@@ -1,32 +1,35 @@
-<h1>TSUNDOKU</h1>
-
 <!-- <h2><%= @user.name %>'s Books for Sale</h2> -->
 <input type="hidden" name="user_id" value="<%= current_user.id %>">
 
-<form id='quote'>
+
+<div class='quote-search'>
+  <form id='quote'>
     <label>
       Get a price quote:
       <input type='text' name='isbn' placeholder='Enter an ISBN number...'/>
     </label>
     <button>Search</button>
-</form>
+  </form>
+</div>
 
 
 
-<div id='books-container'></div>
+
+<div id='books-container' class='book-results'></div>
 
 <script type='template' id='book-html'>
-  <a href="#<%%= book.get('id') %>"><%%= book.get('title') %></a> | <%%= book.get('isbn') %> | <span> &times; </span>
+  <a href="#<%%= book.get('id') %>" class='title-link'><%%= book.get('title') %></a>
+  <span class='delete'> &times; </span>
 </script>
 
 <script type='template' id='book-detail'>
-  <h2><%%= title %></h2>
-  <ol>
-    <li><a href="<%%= prices[0].url %>"><%%= prices[0].site %></a>: $<%%= prices[0].price %></li>
-    <li><a href="<%%= prices[1].url %>"><%%= prices[1].site %></a>: $<%%= prices[1].price %></li>
-    <li><a href="<%%= prices[2].url %>"><%%= prices[2].site %></a>: $<%%= prices[2].price %></li>
-    <li><a href="<%%= prices[3].url %>"><%%= prices[3].site %></a>: $<%%= prices[3].price %></li>
-  </ol>
+  <h2 class='book-title'><%%= title %></h2>
+  <ul>
+    <li><a href="<%%= prices[0].url %>" class='site'><%%= prices[0].site %></a> <span class='price'>$<%%= prices[0].price %></span></li>
+    <li><a href="<%%= prices[1].url %>" class='site'><%%= prices[1].site %></a> <span class='price'>$<%%= prices[1].price %></span></li>
+    <li><a href="<%%= prices[2].url %>" class='site'><%%= prices[2].site %></a> <span class='price'>$<%%= prices[2].price %></span></li>
+    <li><a href="<%%= prices[3].url %>" class='site'><%%= prices[3].site %></a> <span class='price'>$<%%= prices[3].price %></span></li>
+  </ul>
 </script>
 
 

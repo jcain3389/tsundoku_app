@@ -1,6 +1,12 @@
 body {
   background: url('http://www.thegamerslibrary.com/Images/library-background4.jpg');
   background-size: cover;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.title-wrapper {
+  margin: 0 auto;
+  width: 500px;
 }
 
 .title {
@@ -9,11 +15,11 @@ body {
   color: white;
   display: table-cell;
   font-family: 'Josefin Sans', sans-serif;
-  height: 30em;
+  height: 500px;
   margin: 0 auto;
   text-align: center;
   vertical-align: middle;
-  width: 30em;
+  width: 500px;
 }
 
 .title h1 {
@@ -21,8 +27,11 @@ body {
 }
 
 .nav {
-  float: left;
+  color: white;
+  display: block;
+  /*float: left;*/
   font-family: 'Josefin Sans', sans-serif;
+  text-align: left;
 }
 
 .nav a {
@@ -74,3 +83,72 @@ body {
   width: 200px;
 }
 
+.quote-search {
+  background-color: rgba(245, 241, 222, 0.30);
+  border-radius: 15px;
+  color: white;
+  margin: 0 auto;
+  margin-top: 70px;
+  padding: 15px;
+  text-align: center;
+  width: 300px;
+}
+
+#quote {
+
+}
+
+#books-container {
+  color: white;
+  margin: 0 auto;
+  text-align: center;
+  width: 500px;
+}
+
+#books-container li {
+  list-style-type: none;
+}
+
+#books-container a {
+  color: white;
+  text-decoration: none;
+}
+
+#books-container a:hover {
+  background-color: rgba(245, 241, 222, 0.50);
+}
+
+.book-results ul {
+  padding: 0;
+}
+
+.book-results li {
+  background-color: rgba(245, 241, 222, 0.30);
+  border-radius: 15px;
+  margin: 10px 0;
+  padding: 10px 15px;
+  text-align: left;
+  width: 470px;
+}
+
+.book-results .site {
+  display: inline-block;
+  width: 75%;
+}
+
+.book-results .price {
+  display: inline-block;
+  text-align: right;
+  width: 24%;
+}
+
+.book-results .title-link {
+  display: inline-block;
+  width: 75%;
+}
+
+.book-results .delete {
+  display: inline-block;
+  text-align: right;
+  width: 24%;
+}
